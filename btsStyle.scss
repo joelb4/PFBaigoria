@@ -1,0 +1,192 @@
+$colorNaranja:#ee5221;
+$colorAmarillo:rgb(217,160,29);
+$colorNegro:black;
+$colorBlanco:#fff;
+$colorGris:#ccc;
+$tamanio1:16px;
+$tamanio2:20px;
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family:"Work Sans";
+    box-sizing: border-box;
+}
+iframe{
+    height: 315px;
+    object-fit: cover;
+}
+header{
+    .navbar{
+        background-color: $colorNegro;
+        font-size: $tamanio2;
+    }
+    li{
+        padding-inline: 10px;
+    }
+    a{
+        color:#fff !important;
+    }
+    a:hover{
+        color: #ee5221 !important;
+    }
+    img{
+        width: 160px;
+    }
+}
+main{
+    padding-top: 80px;
+    padding-bottom: $tamanio1;
+    background-image: linear-gradient(to bottom right, rgba(224,224,224,1) 0%, rgba(191,191,191,1) 27%, rgba(196,128,107,1) 100%);
+    min-height: 91.5vh;
+}
+h1{
+    margin-bottom: $tamanio1;
+    padding-block: 20px;
+    text-align: center;
+    background-color: $colorAmarillo;
+    color:black;
+}
+.card{
+    padding-block: $tamanio1;
+    background:transparentize($color: $colorAmarillo, $amount: 0.75);
+    &:hover{
+        background: transparentize($color: $colorAmarillo, $amount: 0.5);
+        transition: all 1s;
+    }
+    h3{
+        padding-bottom: 8px;
+    }
+}
+
+.card-body{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-between;
+    text-align: justify;  
+}
+.card-text{
+    font-size: 18px;
+}
+.btn{
+    margin-top: $tamanio1;
+    background-color: $colorNaranja;
+    color:$colorBlanco;
+    font-size: 18px;
+    transition: all 1s;
+    &:hover{
+        transform: scale(1.5);
+        text-transform: bold;
+        background-color: $colorBlanco;
+        color: $colorNaranja;
+        transition: transform 1s;
+    }
+}
+
+h2{
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: $tamanio1;
+    margin-bottom: 8px;
+    text-shadow: 5px 5px 5px $colorGris;
+    animation-duration: 2s;
+    animation-name: fade;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+@keyframes fade{
+    0%{
+        opacity: 0.5;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+.tabla{
+    padding-inline: 4px;
+    td{
+        font-size: $tamanio2;
+    }
+    thead{
+        font-size: $tamanio2+4;
+    }
+    tbody{
+        th{
+            font-size: $tamanio2;
+        }
+    }
+}
+caption{
+    padding-left: 4px;
+    font-size: $tamanio2;
+}
+form{
+    padding: $tamanio1;
+    background: transparentize($color: $colorAmarillo, $amount: 0.5); 
+    font-size: $tamanio2;
+    .btn{
+        border: none;
+        align-self: center;
+        width: 20%;
+        margin-inline: 40%;
+    }
+}
+.parrafoIniciarSesion{
+    padding: $tamanio1;
+    background: transparentize($color: $colorAmarillo, $amount: 0.5);
+    p{
+        text-align: center;
+        font-size: $tamanio2;
+    }
+    a{
+        text-decoration: none;
+        color: $colorBlanco;     
+    }
+
+}
+
+
+
+
+
+footer{
+    text-align: center;
+    background-color: black;
+    padding: $tamanio1;
+    padding-right: 0px;
+    color: $colorBlanco;
+    i{
+        padding-top: 4px;
+        letter-spacing: $tamanio1;
+        color: $colorBlanco !important;
+        &:hover{
+            color:$colorNaranja !important;
+        }
+    }   
+    p{
+        margin-bottom: 0px;
+        font-size: 25px;
+    }
+    .redes{
+        padding-inline: 0;
+        font-size: 30px;
+    }
+    .fa-whatsapp{
+        padding-left: $tamanio1;
+    }
+}
+@media screen and (max-width: 720px) {
+footer{
+    p{
+        padding-block: 8px;
+        font-size: $tamanio2+2;
+    }
+    i{
+        padding-block: 8px;
+    }
+} 
+} 
