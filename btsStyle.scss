@@ -146,8 +146,40 @@ form{
         text-decoration: none;
         color: $colorBlanco;     
     }
-
 }
+
+.row{
+    .mapa{
+        border:none;
+        min-height: 360px;
+    }
+    .img-fluid{
+        margin-bottom: $tamanio1;
+    }
+}
+
+.contactoRedes{
+    @extend .card;
+    p{
+        font-size: $tamanio2;
+    }
+    a{
+        color: $colorBlanco;
+        &:hover{
+            text-decoration: none;
+            color: $colorNaranja;
+        }
+    }  
+}
+@media screen and (max-width: 1200px) {
+    .contactoRedes{
+        border-radius: $tamanio1;
+        margin: 0 $tamanio1 $tamanio1 $tamanio1;
+    }
+    
+}
+
+
 
 
 

@@ -43,15 +43,15 @@ h1 {
   color: black;
 }
 
-.card {
+.card, .contactoRedes {
   padding-block: 16px;
   background: rgba(217, 160, 29, 0.25);
 }
-.card:hover {
+.card:hover, .contactoRedes:hover {
   background: rgba(217, 160, 29, 0.5);
   transition: all 1s;
 }
-.card h3 {
+.card h3, .contactoRedes h3 {
   padding-bottom: 8px;
 }
 
@@ -161,6 +161,31 @@ form .btn {
   color: #fff;
 }
 
+.row .mapa {
+  border: none;
+  min-height: 360px;
+}
+.row .img-fluid {
+  margin-bottom: 16px;
+}
+
+.contactoRedes p {
+  font-size: 20px;
+}
+.contactoRedes a {
+  color: #fff;
+}
+.contactoRedes a:hover {
+  text-decoration: none;
+  color: #ee5221;
+}
+
+@media screen and (max-width: 1200px) {
+  .contactoRedes {
+    border-radius: 16px;
+    margin: 0 16px 16px 16px;
+  }
+}
 footer {
   text-align: center;
   background-color: black;

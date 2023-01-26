@@ -1,56 +1,89 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="../Imagenes/favicon.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="../btsStyle.css" />
     <title>Contacto</title>
-    <link rel="shortcut icon" href="../Imagenes/favicon.jpg" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <img class="logo" src="../Imagenes/logo.jpg" alt="">
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="BOOTSTRAPclases.html">Clases</a></li>
-                <li><a href="BOOTSTRAPhorarios.html">Horarios</a></li>
-                <li><a href="contacto.html">Contacto</a></li>    
-                <li><a class="iniciarSesion" href="iniciarSesion.html">Iniciar sesión</a></li>  
-            </ul>
+    <header class="container-fluid">
+        <!-- Navbar inicio-->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+            <!-- Brand -->
+            <a class="navbar-brand" href="../index.html">
+                <img src="../Imagenes/logo.jpg" alt="" />
+            </a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="BOOTSTRAPclases.html">Clases</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="BOOTSTRAPhorarios.html">Horarios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="iniciarSesion.html">Iniciar Sesión</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
+        <!--Navbar fin-->
     </header>
     <main>
         <h1>Contactanos</h1>
-        <p>Encontranos en <span>Ing Henri 391</span></p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6730.734957986664!2d-58.2272819!3d-32.489606!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95afdb03d3d75fdd%3A0x213ebb0492685544!2sGimnasio%20La%20Roca!5e0!3m2!1ses!2sar!4v1670219705158!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <div class="divContacto">
-            <div class="contacto">
-                <p>Cualquier consulta no dudes en escribirnos!</p>
-                <p>Whatsapp: <i class="fa-brands fa-whatsapp"></i> <a href="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2Fmessage%2F5WPPC3ARHFDEE1&e=ATMKdnO81zy3M0ToRrGeyXSJeSBNNZCLlVg_sNz2NrRAVFEaj45lmcfaITULP4nlOQJgRZlgiYln9rz4WYMOxQ">+543442667602</a></p>
-                <p>Email: <i class="fa-regular fa-envelope"></i> info@laroca.com</p>
+        <div class="contacto container-fluid">
+            <div class="row">
+                <h2 class="col-lg-12">Encontranos en <span>Ing. Henri 391</span></h2>
+                <iframe class="img-fluid col-lg-6 mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6730.734957986664!2d-58.2272819!3d-32.489606!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95afdb03d3d75fdd%3A0x213ebb0492685544!2sGimnasio%20La%20Roca!5e0!3m2!1ses!2sar!4v1670219705158!5m2!1ses!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <img class="img-fluid col-lg-6" src="../Imagenes/EntrenaEnLaRoca.jpg" alt="">
             </div>
-            <div class="contacto">
-                <p>Visitá nuestras redes para no perderte las novedades!</p>
-                <p>Facebook: <i class="fa-brands fa-facebook"></i> <a href="https://www.facebook.com/gimnasiolaroca">@gimnasiolaroca</a></p>
-                <p>Instagram: <i class="fa-brands fa-instagram"></i> <a href="https://www.instagram.com/gym.laroca/">@gym.laroca</a></p>
-            </div>
-        </div>  
-    </main>
-   
-    <footer>
-        <p>Gimnasio La Roca - Concepción del Uruguay</p>
-        <nav>
-            <ul>
-                <li><a href="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2Fmessage%2F5WPPC3ARHFDEE1&e=ATMKdnO81zy3M0ToRrGeyXSJeSBNNZCLlVg_sNz2NrRAVFEaj45lmcfaITULP4nlOQJgRZlgiYln9rz4WYMOxQ"><i class="fa-brands fa-whatsapp"></i></a></li>
-                <li><a href="https://www.instagram.com/gym.laroca/"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://www.facebook.com/gimnasiolaroca"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="https://goo.gl/maps/muezS8C8Z3QjMN6F6"><i class="fa-sharp fa-solid fa-location-dot"></i></a></li>
-            </ul>
-        </nav>
-    </footer>
+            <div class="row">
+                <div class="col-xl-6 contactoRedes">
+                    <h3>Cualquier consulta no dudes en escribirnos!</h3>
+                    <p>Whatsapp: <i class="fa-brands fa-whatsapp"></i> <a href="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2Fmessage%2F5WPPC3ARHFDEE1&e=ATMKdnO81zy3M0ToRrGeyXSJeSBNNZCLlVg_sNz2NrRAVFEaj45lmcfaITULP4nlOQJgRZlgiYln9rz4WYMOxQ">+543442667602</a></p>
+                    <p>Email: <i class="fa-regular fa-envelope"></i> info@laroca.com</p>
+                </div>
+                <div class="col-xl-6 contactoRedes">
+                    <h3>Visitá nuestras redes para no perderte las novedades!</h3>
+                    <p>Facebook: <i class="fa-brands fa-facebook"></i> <a href="https://www.facebook.com/gimnasiolaroca">@gimnasiolaroca</a></p>
+                    <p>Instagram: <i class="fa-brands fa-instagram"></i> <a href="https://www.instagram.com/gym.laroca/">@gym.laroca</a></p>
+                </div>
+            </div>            
+        </div>
 
+
+    </main>   
+    <footer class="container-fluid">
+        <div class="row">
+            <p class="col-md-8 text-md-left ">Gimnasio La Roca - Concepción del Uruguay</p>
+            <div class="redes col-md-4 text-md-right">
+                <a href="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2Fmessage%2F5WPPC3ARHFDEE1&e=ATMi6NnlVG4JchGkKH-Q_E-PGYoWbTYS4bmMzFhek__FPJZZtd4Dih9j9t878iNvjLtFm0n8kXwDjKZ4T4NiWg"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/gym.laroca/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/gimnasiolaroca"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://goo.gl/maps/muezS8C8Z3QjMN6F6"><i class="fa-sharp fa-solid fa-location-dot"></i></a>
+            </div>
+        </div>      
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
 </body>
 </html>
