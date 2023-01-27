@@ -241,6 +241,7 @@ form {
 }
 form .btn {
   align-self: center;
+  min-width: 86px;
 }
 
 .parrafoIniciarSesion {
