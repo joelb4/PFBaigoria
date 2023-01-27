@@ -135,7 +135,7 @@ h1{
     .cont-img{
         width: 350px;
         height: 350px;
-        margin-inline: $tamanio1/2;
+        margin-inline: 8px;
     }    
 }
 .card{
@@ -213,14 +213,13 @@ caption{
     font-size: $tamanio2;
 }
 form{
+    display: flex;
+    flex-direction: column;
     padding: $tamanio1;
     background: transparentize($color: $colorAmarillo, $amount: 0.5); 
-    font-size: $tamanio2;
+    font-size: $tamanio2;    
     .btn{
-        border: none;
         align-self: center;
-        width: 20%;
-        margin-inline: 40%;
     }
 }
 .parrafoIniciarSesion{

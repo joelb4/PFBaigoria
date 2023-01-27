@@ -233,15 +233,14 @@ caption {
 }
 
 form {
+  display: flex;
+  flex-direction: column;
   padding: 16px;
   background: rgba(217, 160, 29, 0.5);
   font-size: 20px;
 }
 form .btn {
-  border: none;
   align-self: center;
-  width: 20%;
-  margin-inline: 40%;
 }
 
 .parrafoIniciarSesion {
