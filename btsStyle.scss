@@ -127,8 +127,15 @@ h1{
 }
 @media screen and (max-width:550px){
     .cont-img{
-        width: 450px;
-        height: 450px;
+        width: 420px;
+        height: 420px;
+    }    
+}
+@media screen and (max-width:450px){
+    .cont-img{
+        width: 350px;
+        height: 350px;
+        margin-inline: $tamanio1/2;
     }    
 }
 .card{
