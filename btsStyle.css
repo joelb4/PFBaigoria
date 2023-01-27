@@ -1,7 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
 * {
   padding: 0px;
   margin: 0px;
-  font-family: "Work Sans";
+  font-family: "fuente1";
   box-sizing: border-box;
 }
 
@@ -43,6 +44,94 @@ h1 {
   color: black;
 }
 
+.jumbotron {
+  width: 100%;
+  min-height: 500px;
+  background-image: url(./Imagenes/gimnasio.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat;
+  text-align: center;
+  border-radius: 0;
+}
+.jumbotron h1 {
+  background: transparent;
+  font-size: 60px;
+  text-align: center;
+  color: #fff;
+  padding: 60px 0px 60px 0px;
+  text-shadow: 1px 3px 0 #969696, 3px 6px 2px #aba8a8;
+}
+.jumbotron p {
+  color: #ccc;
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 10px;
+  text-shadow: 1px 3px 0 #969696, 1px 1px 1px #aba8a8;
+}
+.jumbotron a {
+  color: #fff;
+}
+.jumbotron a:hover {
+  color: #ee5221;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 850px) {
+  .jumbotron {
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+}
+.contenedor {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+.contenedor p {
+  font-size: 20px;
+  padding: 16px;
+}
+.contenedor .inicio {
+  text-align: center;
+}
+.contenedor .btn {
+  align-self: center;
+  margin-top: 32px;
+}
+
+.cont-img {
+  background-size: cover;
+  background-position: center;
+  width: 600px;
+  height: 600px;
+  margin-inline: 16px;
+  align-self: center;
+  border-radius: 16px;
+}
+
+.cont-img-1 {
+  background-image: url(Imagenes/sala1.png);
+}
+
+.cont-img-2 {
+  background-image: url(Imagenes/sala2.png);
+}
+
+@media screen and (max-width: 720px) {
+  .cont-img {
+    width: 500px;
+    height: 500px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .cont-img {
+    width: 450px;
+    height: 450px;
+  }
+}
 .card, .contactoRedes {
   padding-block: 16px;
   background: rgba(217, 160, 29, 0.25);
@@ -169,6 +258,9 @@ form .btn {
   margin-bottom: 16px;
 }
 
+.contactoRedes {
+  text-align: center;
+}
 .contactoRedes p {
   font-size: 20px;
 }
@@ -178,6 +270,9 @@ form .btn {
 .contactoRedes a:hover {
   text-decoration: none;
   color: #ee5221;
+}
+.contactoRedes span {
+  color: #fff;
 }
 
 @media screen and (max-width: 1200px) {

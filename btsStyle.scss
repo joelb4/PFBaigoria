@@ -5,12 +5,12 @@ $colorBlanco:#fff;
 $colorGris:#ccc;
 $tamanio1:16px;
 $tamanio2:20px;
-
-
+$fuente1:"Work Sans";
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 *{
     padding: 0px;
     margin: 0px;
-    font-family:"Work Sans";
+    font-family:"fuente1";
     box-sizing: border-box;
 }
 iframe{
@@ -26,10 +26,10 @@ header{
         padding-inline: 10px;
     }
     a{
-        color:#fff !important;
+        color:$colorBlanco !important;
     }
     a:hover{
-        color: #ee5221 !important;
+        color: $colorNaranja !important;
     }
     img{
         width: 160px;
@@ -46,7 +46,90 @@ h1{
     padding-block: 20px;
     text-align: center;
     background-color: $colorAmarillo;
-    color:black;
+    color:$colorNegro;
+}
+.jumbotron{
+    width: 100%;
+    min-height: 500px;
+    background-image: url(./Imagenes/gimnasio.jpg);
+    background-size:contain;
+    background-position:center;
+    background-repeat:repeat;
+    text-align: center;
+    border-radius: 0;
+    h1{
+        background:transparent;
+        font-size: 60px;
+        text-align: center;
+        color: $colorBlanco;
+        padding: 60px 0px 60px 0px;
+        text-shadow: 1px 3px 0 #969696, 3px 6px 2px #aba8a8;
+    }
+    p{
+        color: $colorGris;
+        font-size: 30px;
+        text-align:center;
+        padding-bottom: 10px;
+        text-shadow: 1px 3px 0 #969696, 1px 1px 1px #aba8a8;
+    }
+    a{
+        color: $colorBlanco;
+        &:hover{
+            color: $colorNaranja;
+            text-decoration: none;
+        }
+    }
+}
+@media screen and (max-width: 850px) {
+    .jumbotron{
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+    }
+    
+}
+.contenedor{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin-bottom: $tamanio1*2;
+    p{
+        font-size: $tamanio2;
+        padding: $tamanio1;
+    }
+    .inicio{
+        text-align: center;
+    }
+    .btn{
+        align-self: center;
+        margin-top: $tamanio1*2;
+    }
+}
+.cont-img{
+    background-size: cover;
+    background-position: center;
+    width: 600px;
+    height: 600px;
+    margin-inline: $tamanio1;
+    align-self: center;  
+    border-radius: $tamanio1;    
+}
+@for $i from 1 through 2{
+    .cont-img-#{$i}{
+        background-image: url(Imagenes/sala#{$i}.png);
+    }
+}   
+@media screen and (max-width:720px){
+    .cont-img{
+        width: 500px;
+        height: 500px;
+    }    
+}
+@media screen and (max-width:550px){
+    .cont-img{
+        width: 450px;
+        height: 450px;
+    }    
 }
 .card{
     padding-block: $tamanio1;
@@ -59,7 +142,6 @@ h1{
         padding-bottom: 8px;
     }
 }
-
 .card-body{
     display: flex;
     flex-flow: column wrap;
@@ -84,7 +166,6 @@ h1{
         transition: transform 1s;
     }
 }
-
 h2{
     background-color: rgba(0, 0, 0, 0.1);
     padding: $tamanio1;
@@ -147,7 +228,6 @@ form{
         color: $colorBlanco;     
     }
 }
-
 .row{
     .mapa{
         border:none;
@@ -157,8 +237,8 @@ form{
         margin-bottom: $tamanio1;
     }
 }
-
 .contactoRedes{
+    text-align: center;
     @extend .card;
     p{
         font-size: $tamanio2;
@@ -169,22 +249,17 @@ form{
             text-decoration: none;
             color: $colorNaranja;
         }
-    }  
+    } 
+    span{
+        color:$colorBlanco;
+    } 
 }
 @media screen and (max-width: 1200px) {
     .contactoRedes{
         border-radius: $tamanio1;
         margin: 0 $tamanio1 $tamanio1 $tamanio1;
-    }
-    
+    }    
 }
-
-
-
-
-
-
-
 footer{
     text-align: center;
     background-color: black;
@@ -212,13 +287,13 @@ footer{
     }
 }
 @media screen and (max-width: 720px) {
-footer{
-    p{
-        padding-block: 8px;
-        font-size: $tamanio2+2;
-    }
-    i{
-        padding-block: 8px;
-    }
-} 
+    footer{
+        p{
+            padding-block: 8px;
+            font-size: $tamanio2+2;
+        }
+        i{
+            padding-block: 8px;
+        }
+    } 
 } 

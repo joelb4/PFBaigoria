@@ -5,52 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="Imagenes/favicon.jpg" type="image/x-icon" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="btsStyle.css" />
     <title>Gimnasio La Roca</title>
-    <link rel="shortcut icon" href="./Imagenes/favicon.jpg" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <img class="logo" src="./Imagenes/logo.jpg" alt="">
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="Pages/BOOTSTRAPclases.html">Clases</a></li>
-                <li><a href="Pages/BOOTSTRAPhorarios.html">Horarios</a></li>
-                <li><a href="Pages/contacto.html">Contacto</a></li>  
-                <li><a class="iniciarSesion" href="Pages/iniciarSesion.html">Iniciar sesión</a></li>  
-            </ul>
+    <header class="container-fluid">
+        <!-- Navbar inicio-->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html">
+                <img src="Imagenes/logo.jpg" alt="" />
+            </a>
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Pages/BOOTSTRAPclases.html">Clases</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Pages/BOOTSTRAPhorarios.html">Horarios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Pages/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Pages/iniciarSesion.html">Iniciar Sesión</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-        
+        <!--Navbar fin-->
     </header>
     <main>
-        <div class="banner">
+        <!--jumbotron inicio-->
+        <div class="jumbotron">
             <h1>Gimnasio <span> La Roca</span></h1>
             <p>Centro licenciado de <a href="https://www.lesmillsargentina.com.ar/">Les Mills Argentina</a></p>
             <p>Profesores capacitados en todos los horarios</p>
             <p>Sala de musculación y sala de fitness</p>
         </div>
-        <div class="inicio">
-            <h2>Sala de Musculación</h2>
-            <img src="Imagenes/salaMusculacion.png" alt="">
-            <p>Contamos con una gran variedad de máquinas, pesas, barras y todo lo que necesites para realizar tu entrenamiento personalizado, con un profesor que te guiará segun tus objetivos.</p>
+        <!--jumbotron fin-->
+        <div class="contenedor">
+            <div class="inicio">
+                <h2>Sala de Musculación</h2>
+                <p>Contamos con una gran variedad de máquinas, pesas, barras y todo lo que necesites para realizar tu entrenamiento personalizado, con un profesor que te guiará segun tus objetivos.</p>
+            </div>
+            <div class="cont-img cont-img-1"> </div>
         </div>
-        <div class="inicio">
-            <h2>Sala de Fitness</h2>
-            <img src="Imagenes/SalaFitness.png" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ratione expedita et, delectus distinctio quas nisi quidem voluptas dolorem cumque!</p>
-        </div>
+        <div class="contenedor">
+            <div class="inicio">
+                <h2>Sala de Fitness</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ratione expedita et, delectus distinctio quas nisi quidem voluptas dolorem cumque!</p>
+            </div>
+            <div class="cont-img cont-img-2"> </div>
+            <a href="Pages/BOOTSTRAPclases.html" class="btn">Ver clases</a>
+        </div>     
     </main>
-    <footer>
-        <p>Gimnasio La Roca - Concepción del Uruguay</p>
-        <nav>
-            <ul>
-                <li><a href="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2Fmessage%2F5WPPC3ARHFDEE1&e=ATMKdnO81zy3M0ToRrGeyXSJeSBNNZCLlVg_sNz2NrRAVFEaj45lmcfaITULP4nlOQJgRZlgiYln9rz4WYMOxQ"><i class="fa-brands fa-whatsapp"></i></a></li>
-                <li><a href="https://www.instagram.com/gym.laroca/"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://www.facebook.com/gimnasiolaroca"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="https://goo.gl/maps/muezS8C8Z3QjMN6F6"><i class="fa-sharp fa-solid fa-location-dot"></i></a></li>
-            </ul>
-        </nav>
+    <footer class="container-fluid">
+        <div class="row">
+            <p class="col-md-8 text-md-left ">Gimnasio La Roca - Concepción del Uruguay</p>
+            <div class="redes col-md-4 text-md-right">
+                <a href="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2Fmessage%2F5WPPC3ARHFDEE1&e=ATMi6NnlVG4JchGkKH-Q_E-PGYoWbTYS4bmMzFhek__FPJZZtd4Dih9j9t878iNvjLtFm0n8kXwDjKZ4T4NiWg"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/gym.laroca/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/gimnasiolaroca"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://goo.gl/maps/muezS8C8Z3QjMN6F6"><i class="fa-sharp fa-solid fa-location-dot"></i></a>
+            </div>
+        </div>      
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
 </body>
 </html>
