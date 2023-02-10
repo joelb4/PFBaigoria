@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital@1&display=swap');
+
 $colorNaranja:#ee5221;
 $colorAmarillo:rgb(217,160,29);
 $colorNegro:black;
@@ -6,11 +9,12 @@ $colorGris:#ccc;
 $tamanio1:16px;
 $tamanio2:20px;
 $fuente1:"Work Sans";
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+$fuente2:"'Asap', sans-serif";
+
 *{
     padding: 0px;
     margin: 0px;
-    font-family:"fuente1";
+    font-family:$fuente1;
     box-sizing: border-box;
 }
 iframe{
@@ -47,7 +51,26 @@ h1{
     text-align: center;
     background-color: $colorAmarillo;
     color:$colorNegro;
+    font-family: $fuente1;
+    font-weight: 600;
 }
+h2{
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: $tamanio1;
+    margin-bottom: 8px;
+    text-shadow: 5px 5px 5px $colorGris;
+    animation-duration: 2s;
+    animation-name: fade;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    font-weight:600;
+}
+h3{
+    font-family:$fuente2
+}
+
 .jumbotron{
     width: 100%;
     min-height: 500px;
@@ -95,7 +118,8 @@ h1{
     margin-bottom: $tamanio1*2;
     p{
         font-size: $tamanio2;
-        padding: $tamanio1;
+        padding-block: $tamanio1;
+        padding-inline: $tamanio1*2;
     }
     .inicio{
         text-align: center;
@@ -165,25 +189,16 @@ h1{
     color:$colorBlanco;
     font-size: 18px;
     transition: all 1s;
+    font-family: $fuente2;
+    font-weight: 400;
     &:hover{
         transform: scale(1.5);
         text-transform: bold;
         background-color: $colorBlanco;
         color: $colorNaranja;
         transition: transform 1s;
+        font-weight: 600;
     }
-}
-h2{
-    background-color: rgba(0, 0, 0, 0.1);
-    padding: $tamanio1;
-    margin-bottom: 8px;
-    text-shadow: 5px 5px 5px $colorGris;
-    animation-duration: 2s;
-    animation-name: fade;
-    animation-delay: 2s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
 }
 @keyframes fade{
     0%{

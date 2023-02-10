@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital@1&display=swap");
 * {
   padding: 0px;
   margin: 0px;
-  font-family: "fuente1";
+  font-family: "Work Sans";
   box-sizing: border-box;
 }
 
@@ -42,6 +43,26 @@ h1 {
   text-align: center;
   background-color: rgb(217, 160, 29);
   color: black;
+  font-family: "Work Sans";
+  font-weight: 600;
+}
+
+h2 {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin-bottom: 8px;
+  text-shadow: 5px 5px 5px #ccc;
+  animation-duration: 2s;
+  animation-name: fade;
+  animation-delay: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  font-weight: 600;
+}
+
+h3 {
+  font-family: "'Asap', sans-serif";
 }
 
 .jumbotron {
@@ -92,7 +113,8 @@ h1 {
 }
 .contenedor p {
   font-size: 20px;
-  padding: 16px;
+  padding-block: 16px;
+  padding-inline: 32px;
 }
 .contenedor .inicio {
   text-align: center;
@@ -169,6 +191,8 @@ h1 {
   color: #fff;
   font-size: 18px;
   transition: all 1s;
+  font-family: "'Asap', sans-serif";
+  font-weight: 400;
 }
 .btn:hover {
   transform: scale(1.5);
@@ -176,34 +200,7 @@ h1 {
   background-color: #fff;
   color: #ee5221;
   transition: transform 1s;
-}
-
-h2 {
-  background-color: rgba(0, 0, 0, 0.1);
-  padding: 16px;
-  margin-bottom: 8px;
-  text-shadow: 5px 5px 5px #ccc;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-name: fade;
-          animation-name: fade;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
-}
-
-@-webkit-keyframes fade {
-  0% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
+  font-weight: 600;
 }
 
 @keyframes fade {
@@ -323,4 +320,4 @@ footer .fa-whatsapp {
   footer i {
     padding-block: 8px;
   }
-}/*# sourceMappingURL=btsStyle.css.map */
+}/*# sourceMappingURL=Style.css.map */
